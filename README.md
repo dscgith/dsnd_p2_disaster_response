@@ -8,7 +8,9 @@ This data science project on data from FigureEight was done as part of the Data 
 + [Motivation](#motivation)  
 + [Data](#data)  
 + [What has been done?](#what-has-been-done)  
-+ [How to use](#how-to-use)  
++ [How to use...](#how-to-use)  
+   + [File structure](#how-to-use-the-file-structure)
+   + [Scripts](#how-to-use-the-scripts)
 + [Possible future Improvements](#possible-future-improvements)  
 
 ---
@@ -59,8 +61,12 @@ The two datasets can be combined based on the given ID.
 ### How to use
 
 #### How to nagivate the file structure
+- notebooks  
+|- ETL Pipeline Preparation.ipynb # preparations to build process_data.py  
+|- ML Pipeline Preparation.ipynb # preparations to build train_classifier.py  
+
 - app  
-| - template  
+|- template  
 | |- master.html  # _main page of web app_  
 | |- go.html  # _classification result page of web app_  
 |- __run.py*__  # _Flask file that runs app_
