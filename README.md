@@ -60,7 +60,7 @@ The two datasets can be combined based on the given ID.
 
 ### How to use
 
-#### How to nagivate the file structure
+#### How to navigate the file structure
 - notebooks  
 |- ETL Pipeline Preparation.ipynb # preparations to build process_data.py  
 |- ML Pipeline Preparation.ipynb # preparations to build train_classifier.py  
