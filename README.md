@@ -9,7 +9,7 @@ This data science project on data from FigureEight was done as part of the Data 
 + [Data](#data)  
 + [What has been done?](#what-has-been-done)  
 + [How to use...](#how-to-use)  
-   + [File structure](#how-to-use-the-file-structure)
+   + [File structure](#how-to-navigate-the-file-structure)
    + [Scripts](#how-to-use-the-scripts)
 + [Possible future Improvements](#possible-future-improvements)  
 
@@ -83,7 +83,7 @@ The two datasets can be combined based on the given ID.
 
 (* files to run, see following section)
 
-#### How to to use the scripts
+#### How to use the scripts
 1. ETL Pipeline: process the data and store it in a SQLite database
     * _process_data.py_ takes 3 arguments:
        + filepath of message.csv
