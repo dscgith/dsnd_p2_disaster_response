@@ -57,7 +57,27 @@ The two datasets can be combined based on the given ID.
 ---
 
 ### How to use
-A short instruction on how to use the given scripts:
+
+#### How to nagivate the file structure
+- app  
+| - template  
+| |- master.html  # _main page of web app_  
+| |- go.html  # _classification result page of web app_  
+|- __run.py*__  # _Flask file that runs app_
+
+- data  
+|- disaster_categories.csv  # _data to process_  
+|- disaster_messages.csv  # _data to process_  
+|- __process_data.py*__  # _script to clean and save data to database_  
+|- DisasterResponse.db   # _example for database to save clean data to_  
+
+- models  
+|- __train_classifier.py*__  # _script to train a classifier with database data_  
+|- classifier.pkl  # _example for saved model_   
+
+(* files to run, see following section)
+
+#### How to to use the scripts
 1. ETL Pipeline: process the data and store it in a SQLite database
     * _process_data.py_ takes 3 arguments:
        + filepath of message.csv
@@ -75,8 +95,9 @@ A short instruction on how to use the given scripts:
       `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
  
 3. Use data in webapp:
-    * To run the webapp locally, run:  
+    * To run the webapp locally, go to the _app_ folder and run:  
       `python run.py`
+    * Go to http://0.0.0.0:3001/ to view the webapp
 
 If filenames or filepaths are altered, changes to `run.py` are necessary to run the webapp.  
 
