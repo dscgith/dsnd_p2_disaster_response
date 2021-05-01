@@ -61,10 +61,6 @@ The two datasets can be combined based on the given ID.
 ### How to use
 
 #### How to navigate the file structure
-- notebooks  
-|- ETL Pipeline Preparation.ipynb # preparations to build process_data.py  
-|- ML Pipeline Preparation.ipynb # preparations to build train_classifier.py  
-
 - app  
 |- template  
 | |- master.html  # _main page of web app_  
@@ -75,11 +71,15 @@ The two datasets can be combined based on the given ID.
 |- disaster_categories.csv  # _data to process_  
 |- disaster_messages.csv  # _data to process_  
 |- __process_data.py*__  # _script to clean and save data to database_  
-|- DisasterResponse.db   # _example for database to save clean data to_  
+|- DisasterResponseExample.db   # _example for database to save clean data to_  
 
 - models  
 |- __train_classifier.py*__  # _script to train a classifier with database data_  
-|- classifier.pkl  # _example for saved model_   
+|- classifierExample.pkl  # _example for saved model_   
+
+- notebooks  
+|- ETL Pipeline Preparation.ipynb # preparations to build process_data.py  
+|- ML Pipeline Preparation.ipynb # preparations to build train_classifier.py  
 
 (* files to run, see following section)
 
