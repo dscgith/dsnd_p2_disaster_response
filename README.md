@@ -60,9 +60,9 @@ The two datasets can be combined based on the given ID.
 A short instruction on how to use the given scripts:
 1. ETL Pipeline: process the data and store it in a SQLite database
     * _process_data.py_ takes 3 arguments:
-       + filepath of message csv-file
-       + filepath of categories csv-file
-       + filepath where the database-file is to be created
+       + filepath of message.csv
+       + filepath of categories.csv
+       + filepath where the database is to be created
     
     * Example command:  
       `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
@@ -70,14 +70,16 @@ A short instruction on how to use the given scripts:
 2. ML Pipeline: load the SQLite database, train a DecisionTreeClassifier on the data and store the classifier in a pickle file
     * _train_classifier.py_ takes 2 arguments:
        + filepath of the database
-       + filepath of the model is to be stored            
+       + filepath where the model is to be stored            
     * Example command:  
       `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
  
 3. Use data in webapp:
-    * To run ML pipeline that trains classifier and saves  
+    * To run the webapp locally, run:  
       `python run.py`
-    
+
+If filenames or filepaths are altered, changes to `run.py` are necessary to run the webapp.  
+
 ---
 
 ### Possible future Improvements
