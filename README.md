@@ -12,6 +12,7 @@ This data science project on data from FigureEight was done as part of the Data 
    + [File structure](#how-to-navigate-the-file-structure)
    + [Scripts](#how-to-use-the-scripts)
 + [Possible future Improvements](#possible-future-improvements)  
++ [Acknowledgements](#acknowledgements) 
 
 ---
 
@@ -24,6 +25,7 @@ This data science project on data from FigureEight was done as part of the Data 
 + Numpy
 + sklearn
 + NLTK
++ Flask
 
 Python Version 3.6.3 was used for this project
 
@@ -115,5 +117,10 @@ If filenames or filepaths are altered, changes to `run.py` are necessary to run 
    * deal with the fact, that the data is severely unbalanced regarding some of the categories (i.e. almost no messages for some categories like "offer", "tools" and "shops")
 * Evaluate other Classifier algorithms
 * Customize the webapp interface further with more data visualizations
+
+---
+
+### Acknowledgements
+Starter Code was provided by Udacity as part of the Data Science Nanodegree project, the data was provided by Figure Eight Inc.
 
 ---
